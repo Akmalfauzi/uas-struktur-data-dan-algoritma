@@ -176,6 +176,10 @@ int main()
 -   Memanggil fungsi cetakData lagi untuk menampilkan data yang telah diurutkan.
 -   Mengembalikan nilai 0 untuk menandakan bahwa program telah berakhir.
 
+### Output
+
+[![Output Bubble Sort](https://raw.githubusercontent.com/Akmalfauzi/uas-struktur-data-dan-algoritma/main/output/bubbleSort/bubble-sort.png "Output Bubble Sort")](https://raw.githubusercontent.com/Akmalfauzi/uas-struktur-data-dan-algoritma/main/output/bubbleSort/bubble-sort.png "Output Bubble Sort")
+
 ### - Selection Sort
 
 Program ini menggunakan algoritma Selection Sort untuk mengurutkan data orang berdasarkan nama.
@@ -351,6 +355,8 @@ int main()
 
 ### Output
 
+[![Output Selection Sort](https://raw.githubusercontent.com/Akmalfauzi/uas-struktur-data-dan-algoritma/main/output/selectionSort/selection-sort.png "Output Selection Sort")](https://raw.githubusercontent.com/Akmalfauzi/uas-struktur-data-dan-algoritma/main/output/selectionSort/selection-sort.png "Output Selection Sort")
+
 ## 2. Program Pencarian Biner (Binary Search)
 
 Program ini merupakan implementasi pencarian biner yang dimodifikasi untuk mencari elemen dalam array yang mungkin memiliki duplikat.
@@ -519,3 +525,5 @@ int main()
 -   **Menampilkan Hasil**: Menampilkan hasil pencarian sesuai dengan jumlah elemen yang ditemukan.
 
 ### Output
+
+[![Output Binary Search](https://raw.githubusercontent.com/Akmalfauzi/uas-struktur-data-dan-algoritma/main/output/binarySearch/binary-search.png "Output Binary Search")](https://raw.githubusercontent.com/Akmalfauzi/uas-struktur-data-dan-algoritma/main/output/binarySearch/binary-search.png "Output Binary Search")
