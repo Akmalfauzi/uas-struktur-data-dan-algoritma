@@ -14,30 +14,28 @@ void cetakData(const vector<Orang> &data, const string &judul)
 {
     cout << "\n"
          << judul << ":\n";
-    cout << left << setw(15) << "Nama" << "Alamat\n";
+    cout << "Nama\t\tAlamat\n";
     cout << "------------------------\n";
     for (const auto &orang : data)
     {
-        cout << left << setw(15) << orang.nama << orang.alamat << endl;
+        cout << orang.nama;
+        if (orang.nama.length() < 8)
+            cout << "\t";
+        cout << "\t" << orang.alamat << endl;
     }
     cout << endl;
 }
 
-void selectionSort(vector<Orang> &data)
+void bubbleSort(vector<Orang> &data)
 {
     for (size_t i = 0; i < data.size() - 1; i++)
     {
-        size_t min_idx = i;
-        for (size_t j = i + 1; j < data.size(); j++)
+        for (size_t j = 0; j < data.size() - i - 1; j++)
         {
-            if (data[j].nama < data[min_idx].nama)
+            if (data[j].nama > data[j + 1].nama)
             {
-                min_idx = j;
+                swap(data[j], data[j + 1]);
             }
-        }
-        if (min_idx != i)
-        {
-            swap(data[i], data[min_idx]);
         }
     }
 }
@@ -55,8 +53,8 @@ int main()
         {"Zaki", "Madiun"}};
 
     cetakData(data, "Data Awal");
-    selectionSort(data);
-    cetakData(data, "Setelah Selection Sort");
+    bubbleSort(data);
+    cetakData(data, "Setelah Bubble Sort");
 
     return 0;
 }
